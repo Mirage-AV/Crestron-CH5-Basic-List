@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width,  initial-scale=1">
+        <title>Crestron CH5 Basic</title>
+        <link rel="stylesheet" href="css/main.css" />
+        <link rel="stylesheet" href="./node_modules/@crestron/ch5-theme/output/themes/light-theme.css" />
+    </head>
+    <body>
+        
+        <div class="list-container">
+           
+            <ch5-list 
+            class="contact-list"
+            customclass="contact-list-custom"
+            id="Item.Contact"
+            indexId="idx1" 
+            size="20" 
+            orientation="vertical"
+            gestureable="true"
+            scrollbar="true"
+            >
+            <template>
+                <div class="vertical-list-item">
+                    <ch5-button 
+                        customclass="list-item-btn"
+                        customclasspressed="list-item-btn-pressed"
+                        stretch="both"
+                        sendEventOnClick="Contact[{{idx1}}].ItemSelect" 
+                        receiveStateSelected="Contact[{{idx1}}].ItemSelected"
+                        receivestatelabel="Contact[{{idx1}}].ItemText"
+                    ></ch5-button>
+                </div> 
+            </template>
+            </ch5-list>
+        </div>
+        <br>
+        <div class="list-select-feedback" data-ch5-textcontent="1">
+                
+        </div>             
+        <script src="./node_modules/@crestron/ch5-crcomlib/build_bundles/umd/cr-com-lib.js"></script>
+        <!-- Comment 2 lines below before archiving or they will run the emulator on the touchpanel -->
+        <script src="./assets/vendor/service.js"></script>
+        <script src="./assets/vendor/app.js"></script>
+        <!-- *************************************************************************************-->
+    </body>
+</html>

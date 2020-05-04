@@ -1,0 +1,94 @@
+{
+    "cues": [
+      {
+        "type": "boolean",
+        "event": "Contact[0].ItemSelect",
+        "trigger": true,
+        "actions": [
+          {"state":"Contact[0].ItemSelected","type":"boolean","logic":"set","value":true },
+          {"state":"Contact[1].ItemSelected","type":"boolean","logic":"set","value":false },
+          {"state":"Contact[2].ItemSelected","type":"boolean","logic":"set","value":false },
+          {"state":"Contact[3].ItemSelected","type":"boolean","logic":"set","value":false },
+          {"state":"Contact[4].ItemSelected","type":"boolean","logic":"set","value":false },
+          {"state":"Contact[5].ItemSelected","type":"boolean","logic":"set","value":false },
+          {"state":"1","type":"string","logic":"set","value":"List Item 1"}]
+      },
+      {
+        "type": "boolean",
+        "event": "Contact[1].ItemSelect",
+        "trigger": true,
+        "actions": [
+          {"state":"Contact[0].ItemSelected","type":"boolean","logic":"set","value":false },
+          {"state":"Contact[1].ItemSelected","type":"boolean","logic":"set","value":true },
+          {"state":"Contact[2].ItemSelected","type":"boolean","logic":"set","value":false },
+          {"state":"Contact[3].ItemSelected","type":"boolean","logic":"set","value":false },
+          {"state":"Contact[4].ItemSelected","type":"boolean","logic":"set","value":false },
+          {"state":"Contact[5].ItemSelected","type":"boolean","logic":"set","value":false },
+          {"state":"1","type":"string","logic":"set","value":"List Item 2"}]
+      },
+      {
+        "type": "boolean",
+        "event": "Contact[2].ItemSelect",
+        "trigger": true,
+        "actions": [
+          {"state":"Contact[0].ItemSelected","type":"boolean","logic":"set","value":false },
+          {"state":"Contact[1].ItemSelected","type":"boolean","logic":"set","value":false },
+          {"state":"Contact[2].ItemSelected","type":"boolean","logic":"set","value":true },
+          {"state":"Contact[3].ItemSelected","type":"boolean","logic":"set","value":false },
+          {"state":"Contact[4].ItemSelected","type":"boolean","logic":"set","value":false },
+          {"state":"Contact[5].ItemSelected","type":"boolean","logic":"set","value":false },
+          {"state":"1","type":"string","logic":"set","value":"List Item 3"}]
+      },
+      {
+        "type": "boolean",
+        "event": "Contact[3].ItemSelect",
+        "trigger": true,
+        "actions": [
+          {"state":"Contact[0].ItemSelected","type":"boolean","logic":"set","value":false },
+          {"state":"Contact[1].ItemSelected","type":"boolean","logic":"set","value":false },
+          {"state":"Contact[2].ItemSelected","type":"boolean","logic":"set","value":false },
+          {"state":"Contact[3].ItemSelected","type":"boolean","logic":"set","value":true },
+          {"state":"Contact[4].ItemSelected","type":"boolean","logic":"set","value":false },
+          {"state":"Contact[5].ItemSelected","type":"boolean","logic":"set","value":false },
+          {"state":"1","type":"string","logic":"set","value":"List Item 4"}]
+      },
+      {
+        "type": "boolean",
+        "event": "Contact[4].ItemSelect",
+        "trigger": true,
+        "actions": [
+          {"state":"Contact[0].ItemSelected","type":"boolean","logic":"set","value":false },
+          {"state":"Contact[1].ItemSelected","type":"boolean","logic":"set","value":false },
+          {"state":"Contact[2].ItemSelected","type":"boolean","logic":"set","value":false },
+          {"state":"Contact[3].ItemSelected","type":"boolean","logic":"set","value":false },
+          {"state":"Contact[4].ItemSelected","type":"boolean","logic":"set","value":true },
+          {"state":"Contact[5].ItemSelected","type":"boolean","logic":"set","value":false },
+          {"state":"1","type":"string","logic":"set","value":"List Item 5"}]
+      },
+      {
+        "type": "boolean",
+        "event": "100",
+        "trigger": true,
+        "actions": [{"state":"100","type":"boolean", "logic": "toggle" }]
+      },
+      {
+        "type": "boolean",
+        "event": "6",
+        "trigger": true,
+        "actions": [{"state":"6", "type": "boolean", "logic": "toggle"}]
+      }
+      
+    ],
+    "onStart": [ { "state": "11", "type":"boolean", "value":true },
+                  {"state":"1", "type":"string", "value":"Selected item shows here"},
+                {"state":"Contact[0].ItemText", "type":"string","value":"List Item 1" },
+                {"state":"Contact[1].ItemText", "type":"string","value":"List Item 2" },
+                {"state":"Contact[2].ItemText", "type":"string","value":"List Item 3" },
+                {"state":"Contact[3].ItemText", "type":"string","value":"List Item 4" },
+                {"state":"Contact[4].ItemText", "type":"string","value":"List Item 5" },
+                {"state":"Contact[5].ItemText", "type":"string","value":"List Item 6" },
+                {"state":"Contact[6].ItemText", "type":"string","value":"List Item 7" },
+                {"state":"Contact[7].ItemText", "type":"string","value":"List Item 8" },
+                {"state":"Contact[8].ItemText", "type":"string","value":"List Item 9" },
+                {"state":"Contact[9].ItemText", "type":"string","value":"List Item 10" }]
+}

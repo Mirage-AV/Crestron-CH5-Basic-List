@@ -1,0 +1,59 @@
+* {
+    padding: 0;
+    
+}
+
+body{
+    background-image: url("../assets/images/background-image.jpg");
+    background-repeat: no-repeat;
+    background-size: 100vw 100vh;
+  }
+
+.list-select-feedback{
+    font-size: xx-large;
+    border: 1px solid black;
+    text-align: center;
+}
+
+/*** The div containing the list, use for main page positioning and size ***/
+.list-container{
+    height: 40vh;
+    width: 60vw;
+    margin-left: 20vw;
+}
+
+/* the main container, use for positioning within the above */
+.contact-list{
+    width: 100%;
+    
+}
+
+/* the list container */
+.ch5-list.contact-list-custom{
+    height: 40vh;
+    
+}
+
+/* the button on the list item */
+.ch5-button.list-item-btn{
+    background-color: aqua;  
+    border: 3px solid white;
+}
+
+/* the pressed colour of the button on the list item */
+.ch5-button.list-item-btn-pressed{
+    background-color: #00000011; 
+}
+
+/* the label on the button in the list item */
+.ch5-button.list-item-btn .ch5-button--label{
+    color: lightseagreen;
+    font-size: 2em;
+}
+
+/* all the list items, global */
+ch5-list .list-item{
+    padding: .2em !important;
+    background-color: blue !important;
+    border: 2px solid red !important; 
+}
